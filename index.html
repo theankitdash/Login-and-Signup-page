@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance System</title>
+   <head>
+      <meta charset="utf-8">
+      <title>Login and SignUp Page</title>
+      <link rel="stylesheet" href="style.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
 
-    <style>
-        form {  
-            padding: 50px;
-            width: 250px;
-        }
-        img {
-            width: 250px;
-    
-        }
-        .form-center {
-            display:flex;
-            justify-content: center;
-            text-align: center;
-        }         
-    </style>
-</head>
+        <div class="wrapper"> 
+            <div class="title-text">
+                <div class="title login">
+                Login Form
+                </div>
+                <div class="title signup">
+                Signup Form
+                </div>
+            </div>
+            <div class="form-container">
 
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                </div>
 
-<body>
-    <div class="form-center">
-        <form>
-            <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Siksha_%E2%80%98O%E2%80%99_Anusandhan.png" alt="SOA">
-            <p>
-                <label><b>Registration No:</b><br><input type="number"></label>
-            </p>
-            <p>
-                <label><b>Password : </b><br><input type="password"></label>
-            </p>
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-            </form> 
+                <div class="form-inner">
+
+                    <form class="login">
+                        <div class="field">
+                            <input type="text" id ="user" name  = "user" placeholder="Registration ID" />
+                        </div>
+                        <div class="field">
+                            <input type="password" id ="pass" name  = "pass" placeholder="Password" />
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">
+                            Not a member? <a href="">Signup now</a>
+                        </div>
+                    </form>
+
+                    <form class="signup">
+                        <div class="field">
+                            <input type="text" id ="user" name  = "user" placeholder="Registration ID" />
+                        </div>
+                        <div class="field">
+                            <input type="password" id ="pass" name  = "pass" placeholder="Password" />
+                        </div>
+                        <div class="field">
+                            <input type="password" id ="cpass" name  = "cpass" placeholder="Confirm Password" />
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>
+
+                </div>
+                
+            </div>      
         </div>
-    
-</body>
+
+      <script src="script.js"></script>
+
+   </body>
 </html>
