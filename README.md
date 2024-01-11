@@ -1,3 +1,3 @@
-# Student Login Page
+# A Simple Login and Signup Page
 
-A friendly website based Student Login Page based on HTML and CSS
+A friendly Login and Signup Page created using HTML, CSS and Javascript.
